@@ -1,0 +1,39 @@
+
+
+@media (max-width: 768px) {
+    
+
+    .bannerPrincipalBombita{
+        padding-top: 30%;
+    }
+    .botonPrincipal {
+        margin-top: 70%;
+       
+    }
+
+    .bannerPrincipalBombita2 img {
+        width: 600px;
+        margin-top: 150px;
+    }
+
+    .section2Txt3 {
+        padding: 10px 10px;
+    }
+
+    select {
+        background-color: #E18C14;
+        color: #FFFFFF;
+        padding: 30px 30px;
+        font-size: 1.5rem;
+        border-radius: 50px;
+    }
+
+    .txtArticulo p{
+        color: #ffffff;
+        font-size: 0.75rem;
+    }
+    .txtArticulo {
+        padding: 10px 30px;
+    }
+            
+}

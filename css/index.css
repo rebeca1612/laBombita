@@ -1,0 +1,402 @@
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav_logo {
+    margin: 20px;
+}
+
+.nav_logo img {
+    width: 100px;
+}
+.navbar {
+    background-color: black;
+    height: 100px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.lenguajes {
+    padding-left: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center
+}
+
+.nav_items {
+    width: calc(80%);
+    display: flex;
+    justify-content: center
+}
+
+.nav_items .navColor {
+    color: #E18C14;
+}
+
+.nav_items .contactoNav {
+    border: 2px solid #E18C14;
+    padding: 1px 20px;
+}
+
+.nav_items .contactoNav:hover {
+    background-color: #E18C14;
+}
+
+.nav_items .contactoNav:hover {
+    color: #ffffff;
+}
+
+.nav_items a {
+    font-size: 20px;
+    color: #BFC4E3;
+    margin: 15px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.nav_items a:hover{
+    color: #E18C14;
+}
+
+#checkbox {
+    position: absolute;
+    display: none;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ----------INICIO DIV 1-----------*/
+
+.background1{
+    background-image: url('../img/FondoPrincipal1.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    z-index: 1;
+}
+
+
+.bannerPrincipalBombita{
+    place-items: center;
+    display: grid;
+    width: 100%;
+    position: absolute;
+    top: 50;
+    left: 0;
+}
+.bannerPrincipalBombita2 img{
+    width: 600px;
+    margin-top: 100px;
+}
+
+.bannerPrincipalBombita2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.botonPrincipal{
+    margin-top: 25%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+span a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #990002;
+    color: ghostwhite;
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: rgb(255, 255, 255);
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+
+/*---------- ONDA -------------*/
+
+.onda1 svg{
+    margin-top: -10%;
+}
+#onda1 {
+
+    filter: drop-shadow(10px 2px 4px rgba(0, 0, 0, 1));
+
+}
+
+.custom-shape-divider-top-1701926304 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1701926304 svg {
+    position: relative;
+    display: block;
+    width: calc(168% + 1.3px);
+    height: 138px;
+}
+
+.custom-shape-divider-top-1701926304 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* ------------SECTION2------------ */
+
+.section2{
+    height: 70vh;
+}
+
+.section2Txt2 p{
+    font-size: 2rem;
+    font-family: 'Bowlby One', sans-serif;
+
+}
+
+.section2Txt2{
+    margin-top: 100px;
+}
+
+.section2Txt3{
+    padding: 10px 300px;
+}
+
+.section2Txt3 p{
+   font-size: 1rem;
+}
+
+/* -------------SELECT--------------- */
+
+
+.selectArticulos{
+    margin-top: 50px;
+}
+
+
+
+select {
+    background-color: #E18C14;
+    color: #FFFFFF;
+    padding: 30px 300px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+
+/* ------------------ARTICULS-------------- */
+
+.fondoNegro{
+    display: none;
+    background-color: #000;
+    height: 110vh;
+}
+
+.escolar p{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Bowlby One', sans-serif;
+}
+.txtArticulo p{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.txtArticulo {
+    padding: 10px 300px;
+}
+
+
+.card {
+    position: relative;
+    width: 11.875em;
+    height: 16.5em;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+    margin: 30px;
+}
+
+.card::after {
+    content: "Contartarnos";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+}
+
+.card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+}
+
+.card:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.card:active::after {
+    height: 3.125em;
+}
+
+.text {
+    max-width: 55px;
+}
+
+.image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.image img{
+    width:150px;
+}
+
+.articulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*------------- FOOTER ----------------*/
+
+.onda3{
+    margin-top: -21%;
+}
+
+.footerBackground{
+    color: #fff;
+    margin-top: -3%;
+    height: 230px;
+    background-color:#990002;
+}
+
+.firtsPart{
+    width: 30%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPart {
+    text-align: center;
+    width: 30%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.secondPart img{
+    width: 150px;
+    padding-bottom: 30px;
+}
+
+.thirdPart {
+    width: 20%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}

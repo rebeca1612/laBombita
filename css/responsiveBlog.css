@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+
+    .blog-item .content {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .blog-item .content .title {
+        font-size: 18px;
+    }
+
+    .blog-item .item-arrow {
+        margin: auto;
+    }
+
+    .blog-item .icon {
+        width: 100%;
+    }
+
+    .blog-item .icon img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .blog-item {
+        width: 92%;
+        margin: auto;
+    }
+
+    .blog-item a {
+        display: block;
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+
+    .bannerPrincipalBombita{
+        padding-top: 30%;
+    }
+    .botonPrincipal {
+        margin-top: 70%;
+       
+    }
+
+    .bannerPrincipalBombita2 img {
+        width: 600px;
+        margin-top: 150px;
+    }
+
+    .section2Txt3 {
+        padding: 10px 10px;
+    }
+
+    select {
+        background-color: #E18C14;
+        color: #FFFFFF;
+        padding: 30px 30px;
+        font-size: 1.5rem;
+        border-radius: 50px;
+    }
+
+    .txtArticulo p{
+        color: #ffffff;
+        font-size: 0.75rem;
+    }
+    .txtArticulo {
+        padding: 10px 30px;
+    }
+            
+}
