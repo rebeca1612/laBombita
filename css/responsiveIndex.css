@@ -1,4 +1,80 @@
+/*MEDIA QUERY 820*/
 
+@media screen and (min-width: 820px) and (max-width: 1180px){
+    .bannerPrincipalBombita{
+        padding-top: 5%;
+    }
+    .botonPrincipal {
+        margin-top: 70%;
+       
+    }
+
+    .bannerPrincipalBombita2 img {
+        width: 600px;
+        margin-top: 150px;
+    }
+
+    .section2Txt3 {
+        padding: 10px 10px;
+    }
+
+    select {
+        background-color: #E18C14;
+        color: #FFFFFF;
+        padding: 30px 30px;
+        font-size: 1.5rem;
+        border-radius: 50px;
+    }
+
+    .txtArticulo p{
+        color: #ffffff;
+        font-size: 0.75rem;
+    }
+    .txtArticulo {
+        padding: 10px 30px;
+    }
+
+    
+    .onda3{
+        margin-top: -21%;
+    }
+
+    .footerBackground{
+        color: #fff;
+        margin-top: -3%;
+        height: calc(100%);
+        background-color:#990002;
+    }
+
+    .firtsPart{
+        width: 30%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondPart {
+        text-align: center;
+        width: 30%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .secondPart img{
+        width: 150px;
+        padding-bottom: 30px;
+    }
+
+    .thirdPart {
+        width: 20%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 
 @media (max-width: 768px) {
     

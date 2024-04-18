@@ -1,39 +1,384 @@
+@media screen and (min-width: 820px) and (max-width: 1180px) {
 
-
-@media (max-width: 768px) {
-    
-
-    .bannerPrincipalBombita{
-        padding-top: 30%;
-    }
-    .botonPrincipal {
-        margin-top: 70%;
-       
+    .background1 {
+        background-image: url('../img/fondoContact.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 35vh;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
     }
 
-    .bannerPrincipalBombita2 img {
-        width: 600px;
-        margin-top: 150px;
+
+    .section1Center {
+        place-items: center;
+        display: grid;
+        width: 100%;
+        position: absolute;
+        top: 50;
+        left: 0;
+        margin-top: 10%;
+        z-index: 2;
     }
 
-    .section2Txt3 {
-        padding: 10px 10px;
-    }
-
-    select {
-        background-color: #E18C14;
+    .section1Center p {
         color: #FFFFFF;
-        padding: 30px 30px;
-        font-size: 1.5rem;
-        border-radius: 50px;
+        font-size: 1.7rem;
+        font-family: 'Bowlby One', sans-serif;
     }
 
-    .txtArticulo p{
+
+
+    .botonPrincipal {
+        margin-top: 25%;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+    }
+
+    span a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    button {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        padding: 0.9rem 2rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 500px;
+        overflow: hidden;
+        background: #990002;
+        color: ghostwhite;
+    }
+
+    button span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+    }
+
+    button:hover span {
+        color: rgb(255, 255, 255);
+    }
+
+    button::before,
+    button::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    button::before {
+        content: "";
+        color: #000000;
+        background: #E18C14;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+
+    button:hover::before {
+        transform: translate3d(100%, 0, 0);
+    }
+
+
+
+
+    /*---------- ONDA -------------*/
+
+
+    #onda1 {
+
+        filter: drop-shadow(10px 2px 4px rgba(0, 0, 0, 1));
+
+    }
+
+    .fondoNegro1 {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 100px;
+    }
+
+    .sectio1Txt1 p {
+        font-size: 2rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+    .custom-shape-divider-top-1701926304 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-top-1701926304 svg {
+        position: relative;
+        display: block;
+        width: calc(168% + 1.3px);
+        height: 138px;
+    }
+
+    .custom-shape-divider-top-1701926304 .shape-fill {
+        fill: #FFFFFF;
+    }
+
+
+    /* ------------SECTION2------------ */
+
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .section2Txt1 {
+        width: 50%;
+        padding: 50px;
+    }
+
+    .section2Txt1 p {
+
+        font-size: 2rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+    .section2Txt1 img {
+        position: relative;
+        width: 600px;
+    }
+
+    .section2Txt2 {
+        padding: 50px;
+    }
+
+    .section2Txt2 p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+
+    .section2Form {
+        text-align: center;
+        width: 50%;
+        padding: 100px;
+        border-radius: 75% 25% 52% 31% / 55% 56% 42% 44%;
+        background-color: #990002;
+        height: 525px;
+    }
+
+
+    /* --------FORM--------- */
+
+
+    .contact-form label {
+        color: rgb(255, 255, 255);
+    }
+
+    .contact-form .heading {
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        ;
+        margin-bottom: 12px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form label {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        resize: none;
+        height: 80px;
+        width: calc(205px);
+    }
+
+    .contact-form input
+    {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form textarea{
+        padding: 1px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px #ff6384;
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-form [type="submit"] {
+        background-color: #E18C14;
         color: #ffffff;
-        font-size: 0.75rem;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Bowlby One', sans-serif;
     }
-    .txtArticulo {
-        padding: 10px 30px;
+
+    .contact-form a[type="submit"]:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
     }
-            
+
+
+
+    /* -------------SEction3--------------- */
+
+    .section3 {
+        text-align: center;
+    }
+
+    .section3 p {
+        font-size: 2rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+    .section2Txt2 p {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardContact {
+        border-radius: 30px;
+        margin: 10px;
+        background-color: #E18C14;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .cardContact img {
+        width: 50px;
+    }
+
+    .cardContact p {
+        font-size: 0.7rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+
+    /* ------------------Section4-------------- */
+
+    .section4 {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fondoNegro2 {
+        background-color: #000000;
+        padding: 30px;
+        border-radius: 25% 52% 52% 0% / 0% 52% 48% 44%;
+        color: #FFFF;
+    }
+
+    .section4Txt p {
+        padding-top: 55px;
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+    .section4Txt1 p {
+        font-size: 1rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+    .section4Part2 {
+        padding: 50px;
+        width: none;
+    }
+    .direction{
+        height: calc(56vh);
+    }
+
+
+
+
+    /*------------- FOOTER ----------------*/
+
+    .onda3 {
+        margin-top: -21%;
+    }
+
+    .footerBackground {
+        color: #fff;
+        margin-top: -1%;
+        height: 230px;
+        background-color: #990002;
+    }
+
+    .firtsPart {
+        width: 30%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondPart {
+        text-align: center;
+        width: 30%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .secondPart img {
+        width: 150px;
+        padding-bottom: 30px;
+    }
+
+    .thirdPart {
+        width: 20%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
 }

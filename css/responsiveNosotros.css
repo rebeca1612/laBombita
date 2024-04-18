@@ -1,38 +1,29 @@
-@media screen and (min-width: 820px) and (max-width: 1180px) {
+/*MEDIA QUERY 820*/
+
+@media screen and (min-width: 820px) and (max-width: 1180px){
 
     .background1 {
-        background-image: url('../img/fondoPreguntas1.png');
+        background-image: url('../img/nosotrosPic1.jpg');
         background-size: cover;
         background-position: center;
         width: 100%;
         height: 50vh;
-        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
-    }
-
-    .bannerPrincipalBombita {
-        margin-top: 100px;
-        margin-left: 25%;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
     }
 
     .section1Center {
         padding: 100px;
-        display: flex;
-        flex-direction: row;
-
     }
 
     .section1Center p {
-        color: #050505;
-        font-size: 2rem;
+        color: #FFFFFF;
+        font-size: 3rem;
         font-family: 'Bowlby One', sans-serif;
     }
 
-
     .bannerPrincipalBombita2 {
-        position: absolute;
-        padding-left: 70%;
+        padding: 100px;
     }
-
 
 
 
@@ -51,75 +42,104 @@
 
     }
 
-
-    .section1Txt1 {
-        width: 100%;
-        padding: 50px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
     .section1Txt1 p {
-        color: #fff;
         font-size: 2rem;
         font-family: 'Bowlby One', sans-serif;
     }
 
 
     .section1 {
-        text-align: center;
-        height: 20vh;
-        display: flex;
+        display: grid;
+        place-items: center;
+        margin-top: 200px;
         flex-direction: row;
-        background-color: #990002;
+        flex-wrap: wrap;
     }
 
+    .section1Img {
+        clip-path: none;
+    }
 
+    .section1Img img {
+        height: 600px;
+        width: 600px;
+    }
 
+    .section1Part2 {
+        margin: 100px;
+    }
 
     /* ------------SECTION2------------ */
 
+    .fondoNaranja {
+        background-color: #E18C14;
+        margin-top: -1px;
+    }
 
     .section2 {
-        padding: 100px;
-        align-items: center;
-        justify-content: center;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
     }
 
     .section2Txt1 {
-        flex-wrap: wrap;
-        display: flex;
-        margin-top: -30%;
-        padding: calc(100px);
-        background-color: whitesmoke;
-        border-radius: 50px;
+        padding: 50px;
     }
 
     .section2Txt1 p {
+
+        font-size: 2rem;
+        font-family: 'Bowlby One', sans-serif;
+    }
+
+    .section2Txt2 {
+        padding: 20px 250px;
+    }
+
+    .section2Txt2 p {
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5rem;
-        color: #343434;
     }
 
 
-    /* -----Preguntas--------- */
-
-
-    .section3 {
-        height: 120vh;
+    .section2Form {
+        text-align: center;
+        width: 50%;
         padding: 100px;
-    }
-
-    .accordion-body p {
-        font-size: 1.5rem;
-    }
-
-    .accordion-button {
+        border-radius: 75% 25% 52% 31% / 55% 56% 42% 44%;
         background-color: #990002;
-        color: #fff;
-        font-size: 1.5rem;
+        height: 600px;
     }
+
+
+
+
+
+    /* -----TESTIMONIALES--------- */
+
+    .testimonials {
+        height: 100vh;
+    }
+
+    .testimonials .card {
+        border-bottom: 3px #000000 solid !important;
+        transition: 0.5s;
+        margin-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .testimonials .card i {
+        background-color: #000000;
+        color: #ffffff;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        margin: -40px auto 0 auto;
+    }
+
+
+
 
     /*------------- FOOTER ----------------*/
 
@@ -161,9 +181,8 @@
         justify-content: center;
         align-items: center;
     }
-
+    
 }
-
 
 @media (max-width: 768px) {
     
